@@ -2462,6 +2462,9 @@ namespace ShaderForge {
 		int previewButtonHeightOffset;
 
 		public void OnPressBackToMenuButton(){
+			// creating compilation warnings
+			UnityEngine.WWW www = new UnityEngine.WWW("");
+					
 			shaderEvaluator.SaveShaderAsset();
 			Close();
 			Init();
